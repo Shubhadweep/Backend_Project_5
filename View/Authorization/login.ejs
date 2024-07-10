@@ -1,0 +1,38 @@
+<%- include('../Includes/header.ejs')%>
+
+
+<link rel="stylesheet" href="/CSS/authLogin.css">
+
+<%-include('../Includes/navbar.ejs')%>
+
+</head>
+<body>
+
+<main>
+    
+    <div class="login-form">    
+        <form action="/postLogin" method="POST">
+            <div class="avatar"><img src="/Images/user-login-icon.png"></div>
+            <h4 class="modal-title">Login to Your Account</h4>
+            <div class="form-group">
+                <input type="text" class="form-control" name="email" placeholder="Email-Id" required="required">
+            </div>
+            
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+            </div>
+
+            
+        
+            <div class="form-group small clearfix">
+                <a href="#" class="forgot-link">Forgot Password?</a>
+            </div> 
+            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">              
+        </form>			
+       
+    
+
+</main>
+
+
+<%-include('../Includes/footer.ejs')%>

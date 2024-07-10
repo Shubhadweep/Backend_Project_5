@@ -1,0 +1,43 @@
+<%- include('../Includes/header.ejs')%>
+
+<link rel="stylesheet" href="/CSS/authReg.css">
+
+<%-include('../Includes/navbar.ejs')%>
+
+</head>
+<body>
+
+<main>
+
+    <div class="container mt-3">
+        <form action="/postSignup" method="POST">
+            <h2 class="text-center text-info">Register With Your Details</h2>
+            <div class="row jumbotron box8">
+              <div class="col-sm-12 mx-t3 mb-4">
+            </div>
+            
+                
+              
+            <div class="col-sm-6 form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email." required>
+              
+            </div>
+           
+            
+            <div class="col-sm-6 form-group">
+              <label for="pass">Password</label>
+              <input type="password" name="password" class="form-control" id="pass" placeholder="Enter your password." required>
+            </div>
+            
+            <div class="col-sm-6 form-group">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+      
+          </div>
+        </form>
+      </div>
+
+</main>
+
+<%-include('../Includes/footer.ejs')%>

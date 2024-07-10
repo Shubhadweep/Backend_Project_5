@@ -1,0 +1,45 @@
+body  {
+    font-family:  'Nunito',  sans-serif;
+    color:  #384047;
+    background-image: url('../Images/admin_bg.jpg');
+    animation:  animatedBackground 40s linear infinite;
+    opacity: 0.9;
+}
+@keyframes animatedBackground  {
+    from  {
+    background-position:  0 0;
+}
+to  {
+    background-position:  100% 0;
+}
+}
+p{
+    font-family: sans-serif;
+    
+}
+
+.container{
+    margin-bottom: 300px;
+}
+
+label {
+    font-weight: 600;
+    color:whitesmoke;
+}
+
+
+.mx-t3{
+  margin-top: -3rem;
+}
+.btn{
+    float:inline-end;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.active{
+    border-bottom:  2px solid greenyellow;
+    
+    
+}
